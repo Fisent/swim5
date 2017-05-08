@@ -1,0 +1,101 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lukzieniewicz.gmail.com.swim5.AddWordFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fdfcd056"
+        android:elevation="1dp">
+
+        <TextView
+            android:id="@+id/editOrg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="Angielski:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <EditText
+            android:id="@+id/editEng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editOrg"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/asfasd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editEng"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="44dp"
+            android:text="Polski:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <EditText
+            android:id="@+id/editPast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editEng"
+            android:layout_alignStart="@+id/editEng"
+            android:layout_below="@+id/asfasd"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editOrg"
+            android:layout_alignStart="@+id/editOrg"
+            android:layout_below="@+id/editPast"
+            android:layout_marginTop="28dp"
+            android:text="Kategoria:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editPast"
+            android:layout_alignLeft="@+id/editPast"
+            android:layout_alignRight="@+id/editPast"
+            android:layout_alignStart="@+id/editPast"
+            android:layout_below="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="61dp"
+            android:text="Czy znane wcześniej?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView10"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/asfasd"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/asfasd"
+            android:text="Dodaj" />
+    </RelativeLayout>
+
+</FrameLayout>
